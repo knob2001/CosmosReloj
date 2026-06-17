@@ -156,7 +156,7 @@
                        VerticalAlignment="Center"
                        ToolTip="Cosmos Reloj desarrollado por Servicios Exteriores"/>
 
-                <TextBlock Grid.Column="1" Text="COSMOS RELOJ"
+                <TextBlock Grid.Column="1" Text="COSMOS ESTUDIO RELOJ"
                            Foreground="{StaticResource TextPrimary}"
                            FontSize="14" FontWeight="Bold" FontFamily="Consolas"
                            VerticalAlignment="Center" HorizontalAlignment="Center"/>
