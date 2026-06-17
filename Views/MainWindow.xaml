@@ -12,10 +12,12 @@
         MinHeight="280"
         ResizeMode="CanResize"
         WindowStyle="None"
-        BorderThickness="1"
-        BorderBrush="#21262D"
+        BorderThickness="0"
         WindowStartupLocation="CenterScreen"
         Background="#0D1117">
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" ResizeBorderThickness="6" UseAeroCaptionButtons="False" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
 
     <Window.DataContext>
         <local:MainWindowVM/>
@@ -161,6 +163,7 @@
 
                 <StackPanel Grid.Column="2" Orientation="Horizontal">
                     <Button Width="25" Height="20" Margin="0,0,4,0"
+                            WindowChrome.IsHitTestVisibleInChrome="True"
                             Style="{StaticResource StatusBarButton}"
                             ToolTip="Minimizar"
                             Click="BtnMinimizar_Click">
@@ -171,6 +174,7 @@
                               StrokeThickness="1.5"/>
                     </Button>
                     <Button Width="25" Height="20" Margin="0,0,4,0"
+                            WindowChrome.IsHitTestVisibleInChrome="True"
                             Style="{StaticResource StatusBarButton}"
                             ToolTip="Maximizar"
                             Click="BtnMaximizar_Click">
@@ -181,6 +185,7 @@
                               StrokeThickness="1.5"/>
                     </Button>
                     <Button Width="25" Height="20"
+                            WindowChrome.IsHitTestVisibleInChrome="True"
                             Style="{StaticResource StatusBarButton}"
                             ToolTip="Cerrar"
                             Click="BtnCerrar_Click">
@@ -252,7 +257,7 @@
                 <StackPanel Width="480" Height="120" VerticalAlignment="Center" HorizontalAlignment="Center">
                     <TextBlock Text="{Binding HoraActual}"
                                Foreground="{Binding HoraActualColor, Converter={StaticResource StringToBrushConverter}}"
-                               FontSize="74"
+                               FontSize="94"
                                FontWeight="Bold"
                                FontFamily="pack://application:,,,/Resources/#LCD AT&amp;T Phone Time/Date"
                                HorizontalAlignment="Center"
@@ -273,7 +278,7 @@
                 <Button Command="{Binding ActualizarHoraCommand}"
                         IsEnabled="{Binding ActualizarEnabled}"
                         Style="{StaticResource AccionButtonStyle}"
-                        ToolTip="Sincronizar hora con servidor NTP">
+                        ToolTip="Sincronizar hora con servidor NTP" Height="25">
                     <TextBlock Text="ACTUALIZAR HORA"
                                FontSize="13" FontFamily="Consolas" FontWeight="Bold"
                                HorizontalAlignment="Center"/>
