@@ -31,7 +31,6 @@
 
   <ItemGroup>
     <Resource Include="Resources\LCDAT&amp;TPhoneTimeDate.ttf" />
-    <Resource Include="Resources\logo_rne.png" />
   </ItemGroup>
 
 </Project>

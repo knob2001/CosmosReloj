@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CosmosReloj"
         mc:Ignorable="d"
-        Icon="..\Resources\logo_cosmos.ico"
         Title="{Binding NombreVentana}"
         Height="340"
         Width="520"
@@ -151,8 +150,8 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <Image Grid.Column="0" Source="../Resources/logo_rne.png"
-                       Height="23" Width="71"
+                <Image Grid.Column="0" Source="../Resources/logo_cosmos.png"
+                       Height="23" Width="23"
                        RenderOptions.BitmapScalingMode="HighQuality"
                        VerticalAlignment="Center"
                        ToolTip="Cosmos Reloj desarrollado por Servicios Exteriores"/>
