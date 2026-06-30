@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CosmosReloj"
         mc:Ignorable="d"
+        Icon="..\Resources\logo_cosmos.ico"
         Title="{Binding NombreVentana}"
         Height="340"
         Width="520"

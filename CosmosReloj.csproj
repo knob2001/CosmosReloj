@@ -13,6 +13,7 @@
     <AssemblyName>CosmosReloj</AssemblyName>
     <StartupObject>CosmosReloj.App</StartupObject>
 
+    <ApplicationIcon>Resources\logo_cosmos.ico</ApplicationIcon>
     <Title>COSMOS_RELOJ</Title>
     <Description>Reloj COSMOS</Description>
     <Company>Oscar</Company>
